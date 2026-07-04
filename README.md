@@ -1,30 +1,41 @@
-# Simple Notes App for TWS Community
-This is a simple notes app built with React and Django.
+# Automated Django Notes Application Deployment
 
-## Requirements
-1. Python 3.9
-2. Node.js
-3. React
+## Project Overview
 
-## Installation
-1. Clone the repository
-```
-https://github.com/Rakesh62041/django-notes-app
-```
+This project demonstrates automated deployment of a Django Notes Application using Docker, Docker Compose, Jenkins CI/CD pipeline, Nginx and MySQL.
 
-2. Build the app
-```
-docker build -t notes-app .
-```
+## Technologies Used
 
-3. Run the app
-```
-docker run -d -p 8000:8000 notes-app:latest
-```
+- Python
+- Django
+- Docker
+- Docker Compose
+- Jenkins
+- Nginx
+- MySQL
+- Git & GitHub
 
-## Nginx
+## Architecture
 
-Install Nginx reverse proxy to make this application available
+Developer → GitHub → Jenkins → Docker → Django + MySQL + Nginx
 
-`sudo apt-get update`
-`sudo apt install nginx`
+## Features
+
+- User Authentication
+- Notes CRUD Operations
+- Dockerized Deployment
+- Jenkins CI/CD Pipeline
+- Nginx Reverse Proxy
+- MySQL Database
+
+## Project Structure
+
+```bash
+django-notes-app/
+├── Dockerfile
+├── docker-compose.yml
+├── Jenkinsfile
+├── nginx/
+├── notesapp/
+├── requirements.txt
+└── README.md
