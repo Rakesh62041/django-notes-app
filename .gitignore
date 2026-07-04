@@ -26,3 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 .env
 db.sqlite3
+db.sqlite3
+data/
+*.sqlite3
